@@ -14,7 +14,7 @@
 	
 	<form [formGroup]="form" (ngSubmit)="onSubmit()" style="display: flex; flex-direction: row; justify-content: space-between; width: 50%">
 		<div style="margin-right: 20px">
-			<mat-radio-group aria-label="Protocolo" name="protocol">
+			<mat-radio-group aria-label="Protocolo" name="protocol" formControlName="protocol">
 				<mat-radio-button value="TCP">TCP</mat-radio-button>
 				<mat-radio-button value="UDP">UDP</mat-radio-button>
 			</mat-radio-group>

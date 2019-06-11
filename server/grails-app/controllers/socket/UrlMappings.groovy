@@ -14,6 +14,6 @@ class UrlMappings {
 		"500"(view: '/error')
 		"404"(view: '/notFound')
 
-		"/file"(controller: 'file', action: 'index')
+		"/file"(single: 'file')
 	}
 }
